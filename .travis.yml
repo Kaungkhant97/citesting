@@ -1,12 +1,15 @@
 language: android
 android:
   components:
-    - build-tools-26.0.0
+    - build-tools-26.1.0
+    - android-26
     - $ANDROID_TARGET
     - sys-img-armeabi-v7a-$ANDROID_TARGET
     - extra-android-support
     - extra-android-m2repository
     - extra-google-m2repository
+    - sys-img-armeabi-v7a-android-26
+    - sys-img-armeabi-v7a-android-17
 env:
   matrix:
     - ANDROID_TARGET=android-19  ANDROID_ABI=armeabi-v7a
