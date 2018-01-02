@@ -1,9 +1,15 @@
 language: android
 android:
   components:
-    - build-tools-26.1.0
-    - android-26
-    - $ANDROID_TARGET
+
+  - tools
+      - platform-tools
+      - build-tools-26.0.2
+
+        - android-26
+      - $ANDROID_TARGET
+      - extra-google-m2repository
+      - extra-android-m2repository
     - sys-img-armeabi-v7a-$ANDROID_TARGET
     - extra-android-support
     - extra-android-m2repository
